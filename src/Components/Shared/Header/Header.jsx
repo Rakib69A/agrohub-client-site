@@ -38,7 +38,6 @@ const Header = () => {
                     <li><a href="contactus">Contact Us</a></li>
                     <li><a href="blogs">Blogs</a></li>
                     <li><a href="login">Login</a></li>
-                    <li><a href="register">Register</a></li>
                 </ul>
             </nav>
             </div>
