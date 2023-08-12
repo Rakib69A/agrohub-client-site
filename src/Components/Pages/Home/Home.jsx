@@ -1,9 +1,10 @@
 import React from 'react';
+import ResponsiveCarousel from '../../Shared/ResponsiveCarousel/ResponsiveCarousel';
 
 const Home = () => {
     return (
         <div>
-            <h3 className='bg-red-500 text-center'>Home page</h3>
+            <ResponsiveCarousel></ResponsiveCarousel>
         </div>
     );
 };
