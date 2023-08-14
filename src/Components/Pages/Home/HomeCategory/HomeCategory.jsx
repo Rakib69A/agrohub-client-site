@@ -28,27 +28,34 @@ const HomeCategory = () => {
     },
   ];
   return (
-    <div className="flex gap-4">
-      {categoryData.map((item) => {
-        return (
-          <div key={item.id} class=" w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div>
+      <div className="text-center mx-4 mt-20 mb-10 text-2xl text-white font-bold">
+        <h3>Shop By Category</h3>
+      </div>
+      <div className="flex gap-4">
+        {categoryData.map((item) => {
+          return (
+            <div
+              key={item.id}
+              class=" w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            >
               <img
-              style={{borderRadius: 50}}
+                style={{ borderRadius: 50 }}
                 class="p-8 h-64 w-full"
                 src={item.image}
                 alt="product image"
               />
-            <div class="px-5 pb-5">
-              <a href="#">
-                <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                  {item.title}
-                </h5>
-              </a>
-              
+              <div class="px-5 pb-5">
+                <a href="#">
+                  <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                    {item.title}
+                  </h5>
+                </a>
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   );
 };
